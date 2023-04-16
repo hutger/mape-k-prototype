@@ -1,0 +1,2 @@
+pymape==0.1.0a5
+requests==2.28.2
