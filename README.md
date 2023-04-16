@@ -64,6 +64,53 @@ def exec(item, on_next):
 ```
 
 --- 
+### Executar
+
+- Inicie o container:
+
+```
+$ docker run -d --name pymap-risk-k hutger/pymape-risk-k:latest
+```
+
+- Acesse os logs
+
+```
+$ docker logs pymap-risk-k --follow
+...
+----
+2023-04-16 10:54:50.925815
+Risk Level: Critical
+Public Access: Blocked
+----
+
+----
+2023-04-16 10:54:53.183991
+Risk Level: Critical
+Public Access: Blocked
+----
+
+----
+2023-04-16 10:54:54.312169
+Risk Level: High
+Public Access: Blocked
+----
+
+----
+2023-04-16 10:54:55.437568
+Risk Level: Low
+Public Access: Allowed
+----
+
+----
+2023-04-16 10:54:56.558710
+Risk Level: Critical
+Public Access: Blocked
+----
+...
+```
+
+ 
+
 
 ### Distribuído e Descentralizado
 
